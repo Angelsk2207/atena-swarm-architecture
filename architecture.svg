@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1050" viewBox="0 0 1600 1050" role="img" aria-labelledby="title desc">
+<title id="title">Arquitetura Atena Swarm</title><desc id="desc">Zapia coordena Hermes, supervisores, nuvens AWS-powered, Tailscale e dispositivos.</desc>
+<defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fffaf8"/><stop offset="1" stop-color="#f3c1b8"/></linearGradient>
+ <linearGradient id="dark" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#171126"/><stop offset="1" stop-color="#34254d"/></linearGradient>
+ <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="8" stdDeviation="10" flood-opacity=".15"/></filter>
+ <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#8e5b70"/></marker>
+ <style>
+  .title{font:700 42px Arial,sans-serif;fill:#171126}.subtitle{font:400 19px Arial,sans-serif;fill:#624d60}.h{font:700 23px Arial,sans-serif;fill:#171126}.p{font:400 17px Arial,sans-serif;fill:#3e3042}.small{font:400 15px Arial,sans-serif;fill:#624d60}.white{fill:#fff}.darkh{font:700 24px Arial,sans-serif;fill:#fff}.darkp{font:400 17px Arial,sans-serif;fill:#f9e9e5}.label{font:700 16px Arial,sans-serif;fill:#8e5b70}
+ </style>
+</defs>
+<rect width="1600" height="1050" fill="url(#bg)"/>
+<circle cx="1450" cy="110" r="190" fill="#fff" opacity=".35"/><circle cx="130" cy="920" r="230" fill="#fff" opacity=".3"/>
+<text x="800" y="70" text-anchor="middle" class="title">ATENA SWARM</text>
+<text x="800" y="105" text-anchor="middle" class="subtitle">Arquitetura distribuída de agentes, nuvens e dispositivos</text>
+
+<!-- arrows -->
+<path d="M800 245 V285" stroke="#8e5b70" stroke-width="4" marker-end="url(#arrow)"/>
+<path d="M800 420 V460" stroke="#8e5b70" stroke-width="4" marker-end="url(#arrow)"/>
+<path d="M800 620 V670" stroke="#8e5b70" stroke-width="4" marker-end="url(#arrow)"/>
+<path d="M800 830 V875" stroke="#8e5b70" stroke-width="4" marker-end="url(#arrow)"/>
+
+<!-- top -->
+<g filter="url(#shadow)"><rect x="520" y="145" width="560" height="100" rx="24" fill="url(#dark)"/></g>
+<circle cx="575" cy="195" r="28" fill="#de9b81"/><text x="575" y="204" text-anchor="middle" class="h">Z</text>
+<text x="625" y="185" class="darkh">Zapia · General · Nível 0</text><text x="625" y="215" class="darkp">Interface, decisão e entrada de tarefas</text>
+
+<!-- Hermes -->
+<g filter="url(#shadow)"><rect x="520" y="300" width="560" height="120" rx="24" fill="#fff" stroke="#de9b81" stroke-width="3"/></g>
+<circle cx="575" cy="360" r="30" fill="#f3c1b8"/><text x="575" y="369" text-anchor="middle" class="h">H</text>
+<text x="625" y="350" class="h">Hermes Agent · Coordenador</text><text x="625" y="380" class="p">Perfis, delegação e subagentes paralelos</text><text x="625" y="405" class="small">Execução externa e memória de trabalho</text>
+
+<!-- supervisors -->
+<text x="800" y="490" text-anchor="middle" class="label">NÍVEL 1 · SUPERVISORES</text>
+<g filter="url(#shadow)"><rect x="105" y="515" width="320" height="105" rx="20" fill="#fff"/><rect x="470" y="515" width="320" height="105" rx="20" fill="#fff"/><rect x="835" y="515" width="320" height="105" rx="20" fill="#fff"/><rect x="1200" y="515" width="295" height="105" rx="20" fill="#fff"/></g>
+<text x="265" y="555" text-anchor="middle" class="h">☁ Nuvens</text><text x="265" y="585" text-anchor="middle" class="p">health checks · failover</text>
+<text x="630" y="555" text-anchor="middle" class="h">⌘ Infraestrutura</text><text x="630" y="585" text-anchor="middle" class="p">Tailscale · IaC · SSH</text>
+<text x="995" y="555" text-anchor="middle" class="h">✦ Conteúdo</text><text x="995" y="585" text-anchor="middle" class="p">roteiros · design · mídia</text>
+<text x="1347" y="555" text-anchor="middle" class="h">⚙ Arquiteto</text><text x="1347" y="585" text-anchor="middle" class="p">padrões · memória</text>
+<path d="M800 460 V485 H265 V515 M800 485 H630 V515 M800 485 H995 V515 M800 485 H1347 V515" fill="none" stroke="#8e5b70" stroke-width="3" marker-end="url(#arrow)"/>
+
+<!-- cloud layer -->
+<text x="800" y="705" text-anchor="middle" class="label">NÍVEIS 2–3 · COORDENADORES, OPERÁRIOS E NUVENS</text>
+<g filter="url(#shadow)"><rect x="105" y="730" width="410" height="100" rx="20" fill="#fff" stroke="#de9b81" stroke-width="2"/><rect x="595" y="730" width="410" height="100" rx="20" fill="#fff" stroke="#de9b81" stroke-width="2"/><rect x="1085" y="730" width="410" height="100" rx="20" fill="#fff" stroke="#de9b81" stroke-width="2"/></g>
+<text x="310" y="770" text-anchor="middle" class="h">Render</text><text x="310" y="800" text-anchor="middle" class="p">n8n · FreeLLMAPI · Scraper</text>
+<text x="800" y="770" text-anchor="middle" class="h">Back4App</text><text x="800" y="800" text-anchor="middle" class="p">containers · backend alternativo</text>
+<text x="1290" y="770" text-anchor="middle" class="h">SnapDeploy · AWS-powered</text><text x="1290" y="800" text-anchor="middle" class="p">containers NANO · failover</text>
+
+<!-- network -->
+<g filter="url(#shadow)"><rect x="250" y="900" width="1100" height="100" rx="25" fill="url(#dark)"/></g>
+<text x="800" y="940" text-anchor="middle" class="darkh">Tailscale · Rede privada</text>
+<text x="800" y="970" text-anchor="middle" class="darkp">PC · Poco · Linux · notebooks · servidores · qualquer dispositivo autorizado</text>
+</svg>
